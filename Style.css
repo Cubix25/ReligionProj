@@ -1,35 +1,30 @@
 
 
 /*QUESTION BUTTONS*/
-/* Create 2 equal columns that floats next to each other */
 .column {
-    float: left;
+    float: center;
     width: 50%;
     padding: 15px;
 }
 
-/* Clear floats after the columns */
-.row::after {
-    content: "";
-    display: table;
-    clear: both;
+@media screen and (min-width: 500px) {
+  .column{
+      width: 70%;
+  }
 }
 
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width:600px) {
-    .column {
-        width: 100%;
-    }
-}
-
-.questionTypeBtns{
-    background-color: lightblue;
+/*Div holding all btns*/
+.questionBtns{
+  display: grid;
+  grid-template-columns:auto auto;
+  padding: 10px;
 }
 
 .text{
   font-family: "Basier circle",-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
   font-size: 2rem;
   font-weight: 600;
+  overflow-wrap: break-word;
 }
 
 
@@ -53,6 +48,21 @@ footer {
   text-align: center;
 }
 
+/*#Easy{
+  background-color: #49cc3d;
+}
+
+#Medium{
+  background-color: #D58A2D;
+}
+
+#Hard{
+  background-color: #A1092A;
+}
+
+#Hellish{
+  background-color: #851E6F;
+}*/
 
 /* CSS */
 .button-81 {

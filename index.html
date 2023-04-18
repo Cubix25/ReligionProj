@@ -6,29 +6,24 @@
     <script src="MainScript.js"></script>
 </head>
 <body>
+    <p class="text" id="txt">Pick what question you got: </p>
+
     <div id="questionBtns">
-        <p class="text" id="txt">Pick what question you got: </p>
-
-        <!--First row of buttons-->
-        <div class="row">
-            <div class="column">
-                <button class="button-81" type="button" id="Easy" onclick="changeQuest(this.id)">Easy</button>
-            </div>
-
-            <div class="column">
-                <button class="button-81" type="button" id="Medium" onclick="changeQuest(this.id)">Medium</button>
-            </div>
+        
+        <div class="column">
+            <button class="button-81" type="button" id="Easy" onclick="changeQuest(this.id)">Easy</button>
         </div>
 
-        <!--Second row of buttons-->
-        <div class="row">
-            <div class="column">
-                <button class="button-81" type="button" id="Hard" onclick="changeQuest(this.id)">Hard</button>
-            </div>
+        <div class="column">
+            <button class="button-81" type="button" id="Medium" onclick="changeQuest(this.id)">Medium</button>
+        </div>
+        
+        <div class="column">
+            <button class="button-81" type="button" id="Hard" onclick="changeQuest(this.id)">Hard</button>
+        </div>
 
-            <div class="column">
-                <button class="button-81" type="button" id="Hellish" onclick="changeQuest(this.id)">Hellish</button>
-            </div>
+        <div class="column">
+            <button class="button-81" type="button" id="Hellish" onclick="changeQuest(this.id)">Hellish</button>
         </div>
     </div>
 
